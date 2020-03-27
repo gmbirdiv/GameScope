@@ -9,7 +9,7 @@ const apiKey = "6b4ac05b6e77823f1510fcb200250f6e07e11241";
 
 async function queryGameSelect(gameSelectId) {
     let gameObject = [];
-    let gameSelectQuery = `https://www.giantbomb.com/api/game/${gameSelectId}/?api_key=${apiKey}&format=json`;
+    let gameSelectQuery = `https://cors-anywhere.herokuapp.com/https://www.giantbomb.com/api/game/${gameSelectId}/?api_key=${apiKey}&format=json`;
     
     const response = await get(gameSelectQuery);
     gameObject = await response.results;
@@ -20,7 +20,7 @@ async function queryUrl() {
     let queryResponse = [];
     let inputYear = document.querySelector("#inputYear");
 
-    let apiUrl = await `https://www.giantbomb.com/api/games/?api_key=${apiKey}&format=json&filter=expected_release_year:${inputYear.value}`;
+    let apiUrl = await `https://cors-anywhere.herokuapp.com/https://www.giantbomb.com/api/games/?api_key=${apiKey}&format=json&filter=expected_release_year:${inputYear.value}`;
 
     const response = await get(apiUrl);
     await response.results.map(element => {
@@ -297,8 +297,13 @@ $("#filterPlatform").children().each(function() {
 const searchingArray = []
 const guidArray = []
 
+<<<<<<< HEAD
 async function searchArray() {
     let searchUrl = await `https://www.giantbomb.com/api/games/?api_key=0db701c3bf4b84594cb0b2282c255345428c9a87&format=json&filter=expected_release_year:2017,2018,2019,2020,2021,2022,2023`;
+=======
+async function searchArray (){
+    let searchUrl = await `https://cors-anywhere.herokuapp.com/https://www.giantbomb.com/api/games/?api_key=0db701c3bf4b84594cb0b2282c255345428c9a87&format=json&filter=expected_release_year:2017,2018,2019,2020,2021,2022,2023`;
+>>>>>>> 9c1069367b036f0de42742febf769c7c4d40ac4a
     const response = await get(searchUrl);
     response.results.map(element => {
         searchingArray.push(element.name);

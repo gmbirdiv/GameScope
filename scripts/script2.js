@@ -116,8 +116,13 @@ async function buildCards(gameObject) {
 
 // lookup into news API based on game name
 async function newsLookup(gameName) {
+<<<<<<< HEAD
     let newsResponse = [];
     let apiUrl = await `http://newsapi.org/v2/everything?qInTitle=\"${gameName}\"&from=2020-01-30&sortBy=publishedAt&domains=gamespot.com,ign.com,androidcentral.com,comicbook.com,siliconera.com,playstationlifestyle.net,vgchartz.com,imore.com,windowscentral.com&apiKey=0ab09aaa807c43ef9016db62cfa6304d&language=en`;
+=======
+    let newObject = [];
+    let apiUrl = await `https://cors-anywhere.herokuapp.com/http://newsapi.org/v2/everything?qInTitle=\"${gameName}\"&from=2020-01-30&sortBy=publishedAt&domains=gamespot.com,ign.com,androidcentral.com,comicbook.com,siliconera.com,playstationlifestyle.net,vgchartz.com,imore.com,windowscentral.com&apiKey=0ab09aaa807c43ef9016db62cfa6304d&language=en`;
+>>>>>>> 9c1069367b036f0de42742febf769c7c4d40ac4a
     const response = await get(apiUrl);
 
     try {

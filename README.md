@@ -13,6 +13,12 @@ ___
 * Geordy Bird - [GitHub](https://github.com/gmbirdiv) 
 * Karley Petracca - [GitHub](https://github.com/karleypetracca)
 
+<<<<<<< HEAD
+=======
+## API Reference
+* **GiantBomb:** https://www.giantbomb.com/api/documentation/
+* **News API:** https://www.newsapi.org 
+>>>>>>> 9c1069367b036f0de42742febf769c7c4d40ac4a
 
 ## API tools used
 * [GiantBomb](https://www.giantbomb.com/api/documentation/) (3 endpoints)
