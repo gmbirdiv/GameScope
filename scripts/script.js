@@ -297,13 +297,8 @@ $("#filterPlatform").children().each(function() {
 const searchingArray = []
 const guidArray = []
 
-<<<<<<< HEAD
-async function searchArray() {
-    let searchUrl = await `https://www.giantbomb.com/api/games/?api_key=0db701c3bf4b84594cb0b2282c255345428c9a87&format=json&filter=expected_release_year:2017,2018,2019,2020,2021,2022,2023`;
-=======
 async function searchArray (){
     let searchUrl = await `https://cors-anywhere.herokuapp.com/https://www.giantbomb.com/api/games/?api_key=0db701c3bf4b84594cb0b2282c255345428c9a87&format=json&filter=expected_release_year:2017,2018,2019,2020,2021,2022,2023`;
->>>>>>> 9c1069367b036f0de42742febf769c7c4d40ac4a
     const response = await get(searchUrl);
     response.results.map(element => {
         searchingArray.push(element.name);
