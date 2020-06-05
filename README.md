@@ -3,7 +3,7 @@ GameScope provides users the ability to view what games will be released via
 user-specified filters. Users can additionally click on games to view more information
 about the game along with news articles (if available).
 
-**Note:** requires CORS Unblocker Chrome extension or other proxy to use
+
 
 ___
 
